@@ -1,7 +1,7 @@
 pipeline {
   
   agent {
-  label 'babah-agent'
+  label 'agent-primus'
      }
 
   tool {
