@@ -1,0 +1,32 @@
+pipeline {
+  
+  agent {
+  label 'liinux'
+     }
+
+  tool {
+    maven 'Maven'
+  }
+
+  stages{
+    stage('Build Stage') {
+      steps{
+        sh 'mvn clean package'
+      }
+    }
+
+    stage('code scan stage') {
+        steps {
+          sh '      '
+         
+        }
+    }
+  }
+
+
+
+
+
+
+
+}
